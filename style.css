@@ -1,4 +1,110 @@
 * {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+}
+a {
+  text-decoration: none;
+}
+/* header */
+.header {
+  height: 70px;
+  background-color: rgb(107, 126, 4);
+}
+.nav-list {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style-type: none;
+}
+.nav-item {
+  width: 100px;
+}
+.nav-item a {
+  display: block;
+  text-align: center;
+  height: 100%;
+  color: white;
+  text-shadow: 2px -2px 0 rgb(65, 64, 64);
+  }
+.nav-item a:hover {
+  color: black;
+  text-shadow: none;
+  background: rgb(240, 237, 237);
+  border-radius: 5px;
+  transition: color 3s,
+              background 3s;
+}
+/* main */
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+.main__title {
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  color: azure;
+  text-shadow: 2px -2px 0 rgb(65, 64, 64);
+  background: rgb(107, 126, 4);
+}
+.main__title img {
+  width: 100px;
+  margin-left: 20px;
+  border: 1px solid white;
+  box-shadow: 5px -5px 0 0 rgb(107, 126, 4),
+              10px -10px 0 0 rgb(231, 245, 199);
+
+}
+.main__about {
+  width: 70%;
+  padding: 20px 40px;
+  border: 1px dashed black;
+}
+.main_info {
+  width: 30%;
+  padding: 25px 20px;
+  background: linear-gradient(rgb(107, 126, 4), rgb(231, 245, 199));
+  }
+.main_info ul {
+  padding-left: 10px;
+  list-style-type: none;
+  }
+.main_info a {
+  display: block;;
+  padding-left: 10px;
+  color: black;
+  text-decoration: underline;
+  }
+/* footer */
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(231, 245, 199);
+}
+.footer__container img {
+  width: 120px;
+  margin: 0 40px 20px 0;
+}
+.footer__container a {
+  margin-left: 20px;
+  color: black;
+  transition: 3s;
+  }
+.footer__container a:hover {
+  font-weight: bold;
 }
