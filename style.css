@@ -32,10 +32,9 @@ a {
   display: block;
   text-align: center;
   height: 100%;
-  color: azure;
+  color: white;
   text-shadow: 2px -2px 0 rgb(65, 64, 64);
-  
-   }
+  }
 .nav-item a:hover {
   color: black;
   text-shadow: none;
@@ -77,12 +76,19 @@ a {
 }
 .main_info {
   width: 25%;
-  padding: 25px 10px 30px;
+  padding: 25px 20px;
   background: linear-gradient(rgb(107, 126, 4), rgb(231, 245, 199));
-}
+  }
 .main_info ul {
+  padding-left: 15px;
   list-style-type: none;
-}
+  }
+.main_info a {
+  display: block;;
+  padding-left: 15px;
+  color: black;
+  text-decoration: underline;
+  }
 /* footer */
 .footer__container {
   display: flex;
@@ -97,9 +103,8 @@ a {
 .footer__container a {
   margin-left: 20px;
   color: black;
-  transition-duration: 3s;
-}
+  transition: 3s;
+  }
 .footer__container a:hover {
-  font-size: 1.2em;
-  font-weight: bolder;
+  font-weight: bold;
 }
