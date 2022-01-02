@@ -19,6 +19,7 @@ a {
 .header {
   height: 70px;
   width: 100%;
+  max-width: 1500px;
   background-color: rgb(107, 126, 4);
 }
 .nav-list {
@@ -94,6 +95,7 @@ a {
 /* footer */
 .footer {
   width: 100%;
+  max-width: 1500px;
 }
 .footer__container {
   display: flex;
