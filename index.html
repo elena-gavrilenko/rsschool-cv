@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/fav.ico" />
+  </head>
+  <body class="cv">
+    <header class="cv__header">
+      <div class="header">
+        <ul class="header__nav">
+          <li class="header__nav-item"><a href="#about-me">About</a></li>
+          <li class="header__nav-item"><a href="#aducation">Education</a></li>
+          <li class="header__nav-item"><a href="#work">Work</a></li>
+          <li class="header__nav-item"><a href="#code">Code</a></li>
+          <li class="header__nav-item"><a href="#contact">Contact</a></li>
+          <li class="header__nav-item"><a href="#skills">Skills</a></li>
+          <li class="header__nav-item"><a href="#project">Project</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="cv__main">
+      <div class="main">
+        <div class="main__title title">
+          <h1 class="title__name">Gavrilenko Elena</h1>
+          <img
+            class="title__photo"
+            src="./assets/photo.jpg"
+            alt="Helena Gavrilenko portrait"
+          />
+        </div>
+        <div class="main__about info">
+          <section class="info__about-me section" id="about-me">
+            <h2 class="section__title">About me:</h2>
+            <p class="section__text">
+              For a long time I worked as an economist. But, finding myself out
+              of work, I realized that this specialty <i>firstly:</i> unclaimed,
+              and <i>secondly:</i> bored. Therefore, I decided to try myself in
+              IT.
+            </p>
+          </section>
+          <section class="info__education section" id="education">
+            <h2 class="section__title">Education:</h2>
+            <ol class="section__text">
+              <li>
+                Graduated from the University. F. Skaryna, specializing in
+                mathematics.
+              </li>
+              <li>
+                Graduated from the Belarusian Trade and Economics University of
+                Consumer Cooperatives with a degree in management and economics
+                at an enterprise.
+              </li>
+            </ol>
+          </section>
+          <section class="info__work section" id="work">
+            <h2 class="section__title">Work:</h2>
+            <ul class="section__text">
+              <li>
+                LLC Baucomplekt. Production and sale of PVC windows and
+                laminated veneer lumber. Position: Maneger of the Marketing
+                Department.
+              </li>
+              <li>OJSC Salkomm-invest. Food trade. Position: economist.</li>
+              <li>
+                LLC Grandmotors. Sale of spare parts for trucks. Position:
+                economist.
+              </li>
+            </ul>
+          </section>
+          <section class="info__code section" id="code">
+            <h2 class="section__title">Code:</h2>
+            <pre><code>
+            function reverseNumber(n) {
+  
+              return String(n).split('').reverse().join('');
+        
+            };
+            let num = 258961;
+            console.log(`дано ${num} получили ${reverseNumber(258961)}`);
+            </code></pre>
+          </section>
+        </div>
+        <div class="main__info other">
+          <section class="other__contact section" id="contact">
+            <h2 class="section__title">Contact:</h2>
+            <ul class="section__text">
+              <li>Helena(@elena-gavrilenko)</li>
+              <li>gomel-offis@mail.ru</li>
+              <li>@HelenaGavr</li>
+            </ul>
+          </section>
+          <section class="other__skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <ul class="section__text">
+              <li>HTML, CSS, JS a little</li>
+              <li>English A1</li>
+            </ul>
+          </section>
+          <section class="other__project section" id="project">
+            <h2 class="section__title">Project</h2>
+            <a
+              class="section__link"
+              href="https://elena-gavrilenko.github.io/eco-sounds"
+              >eco-sounds</a
+            >
+            <a
+              class="section__link"
+              href="https://elena-gavrilenko.github.io/image-gallery"
+              >image-gallery</a
+            >
+            <a
+              class="section__link"
+              href="https://elena-gavrilenko.github.io/memory-game"
+              >memory-game</a
+            >
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="cv__footer">
+      <div class="footer">
+        <div class="footer__data">
+          2021-2022
+          <a
+            class="footer__github"
+            href="https://github.com/elena-gavrilenko/rsschool-cv"
+            >Helena
+          </a>
+        </div>
+        <a class="footer__rss" href="https://rs.school/js/"> </a>
+      </div>
+    </footer>
+  </body>
+</html>
